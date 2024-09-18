@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "esnext",                                 /* Set the JavaScript language version for emitted JavaScript (modern JS). */
+    "lib": ["dom", "dom.iterable", "esnext"],           /* Add support for the DOM and ESNext library declarations. */
+    "jsx": "react-jsx",                                 /* Specify that JSX should be compiled as React JSX. */
+    "module": "esnext",                                 /* Use ESNext module system (compatible with Vite). */
+    "moduleResolution": "node",                         /* Node-style module resolution. */
+    "esModuleInterop": true,                            /* Ensure compatibility with CommonJS and ESModules. */
+    "forceConsistentCasingInFileNames": true,           /* Enforce consistent casing in imports. */
+    "skipLibCheck": true,                               /* Skip type checking for library declaration files. */
+    "strict": true,                                     /* Enable strict type-checking. */
+    "noUnusedLocals": true,                             /* Enable error reporting for unused local variables. */
+    "noUnusedParameters": true,                         /* Enable error reporting for unused function parameters. */
+    
+    /* Paths and Root Directory */
+    "baseUrl": ".",                                     /* Base directory to resolve non-relative module names. */
+    "paths": {
+      "@/*": ["resources/js/*"]                         /* Alias for easier imports from the resources/js directory. */
+    },
+    
+    /* Type Checking */
+    "allowSyntheticDefaultImports": true,               /* Allow default imports from modules without default exports. */
+    
+    /* JSX and React */
+    "jsxImportSource": "react",                         /* Enable support for the new JSX transform (React 17+). */
+    
+    /* Emit */
+    "noEmit": true                                      /* Do not emit any compiled files (handled by Vite). */
+  },
+  "include": [
+    "resources/js/**/*"                                 /* Include all TypeScript/JavaScript files in resources/js. */
+  ],
+  "exclude": [
+    "node_modules",                                     /* Exclude node_modules to prevent type conflicts. */
+    "vendor"                                            /* Exclude the Laravel vendor folder. */
+  ]
+}
